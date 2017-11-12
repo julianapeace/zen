@@ -1,1 +1,3 @@
-# zen-center
+# zen
+
+## Tiny app
