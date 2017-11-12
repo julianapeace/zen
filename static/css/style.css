@@ -1,0 +1,48 @@
+html, body {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 70vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+body{
+  line-height: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  color: #ddd;
+}
+
+.vertical-center {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 70vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+@media all and (min-width: 1024px) {
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {}
+
+@media all and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+}

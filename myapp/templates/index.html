@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block body %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<h1 style="font-size: 150px">Micro-Applications</h1>
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Weather App</h4>
+        <label for="postal_code">Enter Zip Code</label>
+        <input name="postal_code" id="postal_code" type="postal_code">
+        <button type="submit" id="submit" class="btn btn-outline-primary">Submit</button>
+        <p class="card-text">Made with Darksky and Google Maps Geolocation API</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Timezone</h4>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Timezone</h4>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Timezone</h4>
+
+        {% include 'components/timezone.html' ignore missing %}
+        <form class="hello" action="/timezone" method="post">
+          <div class="form-group">
+          <label for="year">Year</label>
+          <input type="number" name="year" value="2002"></div>
+          <div class="form-group">
+          <label for="month">month</label>
+          <input type="number" name="month" value="10"></div>
+          <div class="form-group">
+          <label for="day">day</label>
+          <input type="number" name="day" value="27"></div>
+          <div class="form-group">
+          <label for="hour">Hour</label>
+          <input type="number" name="hour" value="06"></div>
+          <div class="form-group">
+          <label for="minute">Minute</label>
+          <input type="number" name="minute" value="00"></div>
+          <br>
+          <label for="intz">select input timezone</label>
+              <select class="form-control-sm" name="intz">
+                <option>Australia/Sydney</option>
+                <option>US/Eastern</option>
+                <option>Europe/Amsterdam</option>
+                <option>Europe/Warsaw</option>
+                <option>US/Pacific-New</option>
+              </select>
+          <br>
+          <label for="outtz">select output timezone</label>
+              <select class="form-control-sm" name="outtz">
+                <option>Australia/Sydney</option>
+                <option>US/Eastern</option>
+                <option>Europe/Amsterdam</option>
+                <option>Europe/Warsaw</option>
+                <option>US/Pacific-New</option>
+              </select>
+
+          <button type="submit" name="button" class="btn btn-outline-primary">Submit</button>
+        </form>
+
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Microsoft Recognition Micro-App</h4>
+        <form class="" action="/see" method="post">
+          <div class="form-group">
+          <label for="url">Enter Image URL</label>
+          <input type="text" name="url" value="">
+          <button type="submit" name="button" class="btn btn-outline-primary">Submit</button>
+        </div>
+        </form>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Face Detection Micro-App</h4>
+        <form class="" action="/feel" method="post">
+          <div class="form-group">
+          <label for="url">Enter Image URL</label>
+          <input type="text" name="url" value="">
+          <button type="submit" name="button" class="btn btn-outline-primary">Submit</button>
+        </div>
+        </form>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

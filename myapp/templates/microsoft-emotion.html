@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block facedetection%}
+<h1>Face Detection Micro-App</h1>
+<img src="{{url}}" alt="" max-width="770px"><br>
+Face ID: {{ face_id }}<br>
+Age: {{age}} +/- {{age_range}}<br>
+Gender: {{gender}} {{'%0.1f' | format(gender_confidence|float)}}%<br>
+Race: {{ race }} {{'%0.1f' | format(race_confidence|float)}}%<br>
+Glasses: {{glass}}<br>
+Smile: {{smile}}<br>
+<a href="/" class="btn btn-outline-secondary">Back</a>
+{% endblock %}

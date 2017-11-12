@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block microsoftrecognition %}
+<h1>Microsoft Recognition Micro-App</h1>
+
+<h2>I think this is a picture of {{caption}}.</h2>
+<br>
+I am {{'%0.1f' | format(confidence|float)}}% confident.
+
+<h2>Tags</h2>
+{% for i in tags%}
+{{i}}<br>
+{% endfor %}
+<br>
+<a href="/" class="btn btn-outline-secondary">Back</a>
+{% endblock %}

@@ -1,0 +1,10 @@
+tornado==4.5.2
+Jinja2==2.9.6
+python-dotenv==0.7.1
+psycopg2==2.7.3.1
+requests
+peewee==2.10.2
+datetime==4.2
+markdown2==2.3.4
+pytz
+rapidconnect

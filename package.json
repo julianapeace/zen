@@ -1,0 +1,26 @@
+{
+  "name": "zen-center",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianapeace/zen-center.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianapeace/zen-center/issues"
+  },
+  "homepage": "https://github.com/julianapeace/zen-center#readme",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "browserify": "^14.5.0",
+    "import-env": "^1.1.0",
+    "request": "^2.83.0",
+    "watchify": "^3.9.0"
+  }
+}
